@@ -15,13 +15,15 @@ module.exports = {
         ]
       },
       { text: 'vuepress', link: '/vuepress/'},
-      { text: 'foo', link: '/foo/'},
-      { text: 'bar', link: '/bar/'},
     ],
     sidebar: [
       { title: 'kkk', path: '/bar/',
         children: [
-          { title: 'javascript', path: '/frontend/javascript/javascript_test' },
+          { title: 'javascript', path: '/frontend/javascript/javascript_test',
+            children: [
+              { title: '123123', path: '/frontend/javascript/javascript_test' },
+              { title: '41412421', path: '/frontend/vue/c' }
+            ]},
           { title: 'vue', path: '/frontend/vue/c' }
         ]},
       { title: 'vuepress', path: '/vuepress/'},

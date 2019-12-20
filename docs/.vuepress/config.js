@@ -1,6 +1,6 @@
 // docs/.vuepress/config.js
 module.exports = {
-  title: 'AbelPark\'s diary',
+  title: 'AbelPark',
   search: true,
   description: 'Let\'s get started',
   themeConfig: {
@@ -17,17 +17,14 @@ module.exports = {
       { text: 'vuepress', link: '/vuepress/'},
       { text: 'foo', link: '/foo/'},
       { text: 'bar', link: '/bar/'},
-      { text: 'Home', link: '/' },
     ],
     sidebar: [
       { title: 'kkk', path: '/bar/',
-      children: [
-        { title: 'javascript', path: '/frontend/javascript/javascript_test' },
-        { title: 'vue', path: '/frontend/vue/c' }
-      ]},
+        children: [
+          { title: 'javascript', path: '/frontend/javascript/javascript_test' },
+          { title: 'vue', path: '/frontend/vue/c' }
+        ]},
       { title: 'vuepress', path: '/vuepress/'},
-      
-    
     ]
   }
 }

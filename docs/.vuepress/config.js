@@ -19,8 +19,11 @@ module.exports = {
         ]
       },
       {text: '오늘의 삽질', link: '/03shovel/'},
-      {text: '생각 갈무리', link: '/04thought/'},
-      {text: '저는', link: '/99iam/'},
+      {text: '저는', link: '/99iam/',
+        items: [
+          {text: '생각', link: '/99iam/01thought/'},
+        ]
+      },
     ],
     sidebar: {
       '/01web/': [
@@ -33,16 +36,26 @@ module.exports = {
         {title: 'Javascript', path: '/01web/03javascript/'},
       ],
       '/02database/': [
-        {title: 'Database', path: '/02database/01mysql/'},
+        {title: 'Mysql', path: '/02database/01mysql/'},
         {title: 'Python', path: '/02database/02python/'},
       ],
       '/03shovel/':[
-        {title: '20191220', path: '/03shovel/20191220.md'},
-        {title: '20191221', path: '/03shovel/20191221.md'},
+        {title: '20191220', path: '/03shovel/2019y/',
+          children: [
+            {title: '12월', path: '/03shovel/2019y/12m',
+              children: [
+                {title: '20191221', path: '/03shovel/2019y/12m/20191221.md'},
+              ]},
+            ]
+        },
       ],
-      '/04thought/':[
-        {title: '사람에 대한 평가', path: '/04thought/01judge.md'},
-        {title: '종교에 대해', path: '/04thought/02religion.md'},
+      '/99iam/':[
+        {title: '생각', path: '/99iam/01thought/',
+          children: [
+            {title: '이모저모', path: '/99iam/01thought/01judge.md'},
+            {title: '종교에 대해', path: '/99iam/01thought/02religion.md'},
+          ]
+        },
       ]
     }
   }

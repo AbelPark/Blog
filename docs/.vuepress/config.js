@@ -29,7 +29,10 @@ module.exports = {
             {title: '라이브러리 사용법', path: '/01web/01vuejs/01useage.md'},
             {title: 'vue', path: '/01web/01vuejs/02test.md' }
           ]},
-        {title: 'Vuepress', path: '/01web/02vuepress/'},
+        {title: 'Vuepress', path: '/01web/02vuepress/',
+          children: [
+            {title: '뷰로 블로그 만들기', path: '/01web/02vuepress/01vupress_start.md'},
+          ]},
         {title: 'Javascript', path: '/01web/03javascript/'},
       ],
       '/02database/': [

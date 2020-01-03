@@ -3,6 +3,9 @@ module.exports = {
   title: 'AbelPark',
   search: true,
   description: 'Let\'s get started',
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     nav: [
       {text: 'Web', link: '/01web/',
@@ -44,8 +47,8 @@ module.exports = {
         {title: '20191221', path: '/03shovel/20191221.md'},
       ],
       '/04thought/':[
-        {title: '사람에 대한 평가', path: '/04thought/01judge.md'},
-        {title: '종교에 대해', path: '/04thought/02religion.md'},
+        {title: '1월', path: '/04thought/01judge.md'},
+        {title: '2월', path: '/04thought/02religion.md'},
       ]
     }
   }

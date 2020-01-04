@@ -3,6 +3,9 @@ module.exports = {
   title: 'AbelPark',
   search: true,
   description: 'Let\'s get started',
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     nav: [
       {text: 'Web', link: '/01web/',
@@ -32,7 +35,10 @@ module.exports = {
             {title: '라이브러리 사용법', path: '/01web/01vuejs/01useage.md'},
             {title: 'vue', path: '/01web/01vuejs/02test.md' }
           ]},
-        {title: 'Vuepress', path: '/01web/02vuepress/'},
+        {title: 'Vuepress', path: '/01web/02vuepress/',
+          children: [
+            {title: '뷰로 블로그 만들기', path: '/01web/02vuepress/01vupress_start.md'},
+          ]},
         {title: 'Javascript', path: '/01web/03javascript/'},
       ],
       '/02database/': [
@@ -49,13 +55,9 @@ module.exports = {
             ]
         },
       ],
-      '/99iam/':[
-        {title: '생각', path: '/99iam/01thought/',
-          children: [
-            {title: '이모저모', path: '/99iam/01thought/01judge.md'},
-            {title: '종교에 대해', path: '/99iam/01thought/02religion.md'},
-          ]
-        },
+      '/04thought/':[
+        {title: '1월', path: '/04thought/01judge.md'},
+        {title: '2월', path: '/04thought/02religion.md'},
       ]
     }
   }

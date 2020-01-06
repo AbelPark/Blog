@@ -8,57 +8,51 @@ module.exports = {
   },
   themeConfig: {
     nav: [
-      {text: 'Web', link: '/01web/',
-        items: [
-          {text: 'Vue.js', link: '/01web/01vuejs/'},
-          {text: 'Vuepress', link: '/01web/02vuepress/'},
-          {text: 'Javascript', link: '/01web/03javascript/'},
-        ]
-      },
-      {text: 'Database', link: '/02database/',
-        items: [
-          {text: 'Mysql', link: '/02database/01mysql/'},
-          {text: 'Python', link: '/02database/02python/'},
-        ]
-      },
-      {text: '오늘의 삽질', link: '/03shovel/'},
-      {text: '저는', link: '/99iam/',
-        items: [
-          {text: '생각', link: '/99iam/01thought/'},
-        ]
-      },
+      {text: 'Frontend', link: '/01frontend/'},
+      {text: 'Backend', link: '/02backend/'},
+      {text: 'DataBase', link: '/03database/'},
+      {text: 'ETC.', link: '/04etc/'},
+      {text: 'list', link: '/05list/'},
+      {text: 'I\'m', link: '/06im/'}
     ],
     sidebar: {
-      '/01web/': [
-        {title: 'Vue.js', path: '/01web/01vuejs/',
+      '/01frontend/': [
+        {title: 'Vuejs',
           children: [
-            {title: '라이브러리 사용법', path: '/01web/01vuejs/01useage.md'},
-            {title: 'vue', path: '/01web/01vuejs/02test.md' }
+            {title: '개발환경 설정하기', path: '/01frontend/01vuejs/01vue_settings.md'},
           ]},
-        {title: 'Vuepress', path: '/01web/02vuepress/',
+        {title: 'Javascript',
           children: [
-            {title: '뷰로 블로그 만들기', path: '/01web/02vuepress/01vupress_start.md'},
+            {title: '이벤트리스너', path: '/01frontend/02javascript/01js_event_listener.md'},
           ]},
-        {title: 'Javascript', path: '/01web/03javascript/'},
-      ],
-      '/02database/': [
-        {title: 'Mysql', path: '/02database/01mysql/'},
-        {title: 'Python', path: '/02database/02python/'},
-      ],
-      '/03shovel/':[
-        {title: '20191220', path: '/03shovel/2019y/',
+        {title: 'Html/css',
           children: [
-            {title: '12월', path: '/03shovel/2019y/12m',
-              children: [
-                {title: '20191221', path: '/03shovel/2019y/12m/20191221.md'},
-              ]},
-            ]
-        },
+            {title: '레이어 중앙 정렬하기', path: '/01frontend/03htmlCss/01ui_fixed.md'},
+          ]},
       ],
-      '/04thought/':[
-        {title: '1월', path: '/04thought/01judge.md'},
-        {title: '2월', path: '/04thought/02religion.md'},
-      ]
+      '/02backend/': [
+        {title: 'Python',
+          children: [
+            {title: '개발환경 설정하기', path: '/02backend/01python/01py_settings.md'},
+          ]},
+      ],
+      '/03database/':[
+        {title: 'Mysql',
+          children: [
+            {title: '개발환경 설정하기', path: '/03database/01mysql/01sql_settings.md'},
+          ]},
+        {title: 'Anaconda',
+          children: [
+            {title: '개발환경 설정하기', path: '/03database/02anaconda/01ana_settings.md'},
+          ]}
+      ],
+      '/04etc/':[
+        {title: 'vuepress',
+          children: [
+            {title: '시작하기', path: '/04etc/01vuepress/01vp_start.md'},
+            {title: '목록 만들기', path: '/04etc/01vuepress/02vp_list.md'},
+          ]},
+      ],
     }
   }
 }

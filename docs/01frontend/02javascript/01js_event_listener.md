@@ -1,5 +1,5 @@
 ---
-title: 테그리스트 우선권
+title: 이벤트 리스너
 lang: ko
 description: vuepress 시작하기
 metaTitle: vuepress blog
@@ -8,10 +8,10 @@ meta:
     content: blog
   - name: vuepress setting
     content: super duper SEO
-tags: ["자바자바"]
+tags: ["javascript"]
 ---
 
-# 태그연습
+# 이벤트 리스너
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|

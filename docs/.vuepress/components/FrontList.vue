@@ -1,7 +1,7 @@
 <!-- .vuepress/components/TagList.vue -->
 <template lang="html">
   <div>
-    <span v-if="tag == 'vuejs'" v-for="tag in Object.keys(tags)">
+    <span v-if="tag == 'vuejs' || tag == 'javascript' || tag == 'html/css'" v-for="tag in Object.keys(tags)">
       <h2 :id="tag">
         <router-link
           :to="{ path: `/html#${tag}`}"

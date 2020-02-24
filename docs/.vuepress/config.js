@@ -23,17 +23,17 @@ module.exports = {
           ]},
         {title: 'Javascript',
           children: [
-            {title: '이벤트리스너', path: '/frontend/javascript/01js_event_listener.md'},
+            {title: '이벤트리스너', path: '/frontend/javascript/JsEventListener.md'},
           ]},
         {title: 'Html/css',
           children: [
-            {title: '레이어 중앙 정렬하기', path: '/frontend/html_css/01ui_fixed.md'},
+            {title: '레이어 중앙 정렬하기', path: '/frontend/html_css/UiFix.md'},
           ]},
       ],
       '/backend/': [
         {title: 'Python',
           children: [
-            {title: '개발환경 설정하기', path: '/backend/python/01PySettings.md'},
+            {title: '개발환경 설정하기', path: '/backend/python/PySettings.md'},
           ]},
       ],
       '/database/':[
